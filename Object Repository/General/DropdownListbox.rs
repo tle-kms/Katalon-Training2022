@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>DropdownListbox</name>
+   <tag></tag>
+   <elementGuidId>4dca7673-9596-4236-9504-2fea32e8325b</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//label[text()='${fieldName}']/../following-sibling::div//span[text()='${option}']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//label[text()='${fieldName}']/../following-sibling::div//span[text()='${option}']</value>
+      <webElementGuid>42a34889-e002-4b97-bbdc-8b1e97265fc9</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

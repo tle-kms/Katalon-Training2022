@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Dropdown</name>
+   <tag></tag>
+   <elementGuidId>32e213cb-d488-4a4e-aff9-152ca7ae5f6b</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//label[text()='${fieldName}']/../following-sibling::div</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//label[text()='${fieldName}']/../following-sibling::div</value>
+      <webElementGuid>8c75bbec-b109-4b99-98c4-6251a6831936</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

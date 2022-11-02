@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>chkEmployee</name>
+   <tag></tag>
+   <elementGuidId>5a25bcfa-f86d-429b-be9b-3a77501b5af1</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//div[@class='oxd-table-body']//label[text()='']//i</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//div[@class='oxd-table-body']//label[text()='']//i</value>
+      <webElementGuid>388a487c-313b-4127-a110-dab3751cb0c6</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

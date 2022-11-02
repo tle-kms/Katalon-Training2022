@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lnkDownload</name>
+   <tag></tag>
+   <elementGuidId>8fc15e97-5fd6-468a-9627-0820ed3c5819</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//a[@class='download-link']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//a[@class='download-link']</value>
+      <webElementGuid>3b908130-bc00-4792-90a2-13006b0921be</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

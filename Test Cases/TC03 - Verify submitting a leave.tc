@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC03 - Verify submitting a leave</name>
+   <tag>week3, regression</tag>
+   <comment></comment>
+   <testCaseGuid>87947e84-0633-4f92-aa3f-38879e5521a5</testCaseGuid>
+</TestCaseEntity>

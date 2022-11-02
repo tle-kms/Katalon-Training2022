@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>toastMessage</name>
+   <tag></tag>
+   <elementGuidId>3430fe0d-2a5f-4663-b054-c7011185a1b6</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//div[contains(@class,'toast-container')]//p[contains(@class,'toast-message')]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//div[contains(@class,'toast-container')]//p[contains(@class,'toast-message')]</value>
+      <webElementGuid>5fe24661-0ecc-441e-8536-9b624c20d4fe</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

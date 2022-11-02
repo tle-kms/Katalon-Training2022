@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>mnuSort</name>
+   <tag></tag>
+   <elementGuidId>266298f1-d0f9-4e76-9666-951744aa39be</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>(//div[@role='table']/div[@class='oxd-table-header']//div[@role='columnheader'])[${index}]/div[@class='oxd-table-header-sort']//ul//span[text()='${sortType}']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>(//div[@role='table']/div[@class='oxd-table-header']//div[@role='columnheader'])[${index}]/div[@class='oxd-table-header-sort']//ul//span[text()='${sortType}']</value>
+      <webElementGuid>40a08682-1ade-4ad0-94d1-bab7b5700ad9</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

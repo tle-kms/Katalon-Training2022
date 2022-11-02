@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>TextArea</name>
+   <tag></tag>
+   <elementGuidId>97c95181-5765-4d3f-a196-b9a6f4b7c590</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//label[text()='${fieldName}']/../following-sibling::div/textarea</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//label[text()='${fieldName}']/../following-sibling::div/textarea</value>
+      <webElementGuid>209de7d2-e6c9-4863-8a48-b00c16327d3c</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

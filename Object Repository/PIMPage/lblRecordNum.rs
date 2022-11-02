@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblRecordNum</name>
+   <tag></tag>
+   <elementGuidId>c2e29f94-4536-4a5a-a172-07aa04252fb9</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//div[@class='orangehrm-paper-container']//div[contains(@class,'orangehrm-vertical-padding')]/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//div[@class='orangehrm-paper-container']//div[contains(@class,'orangehrm-vertical-padding')]/span</value>
+      <webElementGuid>5efe217f-d82d-484d-b18c-f1558273e9ec</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

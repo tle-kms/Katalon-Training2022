@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>btnAction</name>
+   <tag></tag>
+   <elementGuidId>9a411201-06b1-419c-97df-c8284a22b9d0</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//div[@role='table']/div[@class='oxd-table-body']/div[@class='oxd-table-card'][${row}]//div[@role='cell'][${col}]//button[contains(@class,'oxd-button')]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//div[@role='table']/div[@class='oxd-table-body']/div[@class='oxd-table-card'][${row}]//div[@role='cell'][${col}]//button[contains(@class,'oxd-button')]</value>
+      <webElementGuid>ca6145bf-743d-42b4-a5a0-71a7606538d2</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

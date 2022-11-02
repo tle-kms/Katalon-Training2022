@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>TableHeader</name>
+   <tag></tag>
+   <elementGuidId>098cef03-0717-49af-9431-b8cc748fc7ce</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//div[@role='table']/div[@class='oxd-table-header']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//div[@role='table']/div[@class='oxd-table-header']</value>
+      <webElementGuid>939e65fc-e5c4-448a-aba4-3cc209e5239f</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

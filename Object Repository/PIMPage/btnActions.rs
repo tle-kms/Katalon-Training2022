@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>btnActions</name>
+   <tag></tag>
+   <elementGuidId>aba14f5e-3c59-4275-9edb-5cfcf62c02ed</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//div[@class='oxd-table-cell-actions']//i[contains(@class,'${actionItem}')]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//div[@class='oxd-table-cell-actions']//i[contains(@class,'${actionItem}')]</value>
+      <webElementGuid>3069e748-dfab-446d-b7df-8ccb5c7e3a82</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

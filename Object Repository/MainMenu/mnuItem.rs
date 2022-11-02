@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>mnuItem</name>
+   <tag></tag>
+   <elementGuidId>1b50c0c2-efde-49d0-80c9-51760423b7f7</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//nav[@role='navigation']/div[@class='oxd-sidepanel-body']/ul//span[text()='${mnuItem}']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//nav[@role='navigation']/div[@class='oxd-sidepanel-body']/ul//span[text()='${mnuItem}']</value>
+      <webElementGuid>95ee423b-d115-432a-8164-dd50e527a99d</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

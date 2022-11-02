@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC04 - File IO</name>
+   <tag>week4, regression</tag>
+   <comment></comment>
+   <testCaseGuid>8c00534f-b9e2-420e-bee8-28ca3c1f4a42</testCaseGuid>
+</TestCaseEntity>
