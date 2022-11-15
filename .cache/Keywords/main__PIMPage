@@ -1,40 +1,44 @@
 {
-  "keywordFileContentHash": "0F2B235919939BA0E06DED7D865CE1EA",
+  "keywordFileContentHash": "1EA182B19FC5C61FED9885895E1EB99C",
   "keywordClasses": [
     {
       "name": "main.PIMPage",
       "keywordMethods": [
         {
-          "name": "verifyTheTableRowsMatching",
+          "name": "navigateToTopMenu",
           "parameters": [
             {
-              "name": "table",
+              "name": "menuName",
               "initialExpression": "",
               "type": {
-                "fullClassName": "com.kms.katalon.core.testobject.TestObject",
-                "unresolvedClassName": "TestObject",
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
                 "isArray": false,
                 "isGnericsPlaceHolder": false,
                 "hasImmutableClassName": false,
                 "genericsTypes": [],
                 "errorOnParsing": false
               }
-            },
+            }
+          ]
+        },
+        {
+          "name": "navigateToLeftMenu",
+          "parameters": [
             {
-              "name": "rows",
+              "name": "menuName",
               "initialExpression": "",
               "type": {
-                "fullClassName": "int",
-                "unresolvedClassName": "int",
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
                 "isArray": false,
                 "isGnericsPlaceHolder": false,
-                "hasImmutableClassName": true,
+                "hasImmutableClassName": false,
                 "genericsTypes": [],
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": "/**\n\t * Verify the rows of Table is as expected\n\t */"
+          ]
         },
         {
           "name": "isListSorted",
@@ -78,8 +82,38 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": "/**\n\t * Verify that the list is sorted ascending\n\t */"
+          ]
+        },
+        {
+          "name": "verifyIdColumnIsSorted",
+          "parameters": [
+            {
+              "name": "column",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "int",
+                "unresolvedClassName": "int",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "sortType",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ]
         },
         {
           "name": "deleteFile",
@@ -97,16 +131,36 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": "/**\n\t * Append to csv file\n\t */"
+          ]
+        },
+        {
+          "name": "setRelativePath",
+          "parameters": []
         },
         {
           "name": "appendToCsvFile",
-          "parameters": [],
-          "javadoc": "/**\n\t * Append to csv file\n\t */"
+          "parameters": []
         },
         {
           "name": "uploadCsvFile",
+          "parameters": [
+            {
+              "name": "path",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ]
+        },
+        {
+          "name": "verifySearchResultGreaterThan",
           "parameters": [
             {
               "name": "obj",
@@ -122,7 +176,38 @@
               }
             },
             {
-              "name": "path",
+              "name": "num",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "int",
+                "unresolvedClassName": "int",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ]
+        },
+        {
+          "name": "selectItemInDropdown",
+          "parameters": [
+            {
+              "name": "dropdownName",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "item",
               "initialExpression": "",
               "type": {
                 "fullClassName": "java.lang.String",
@@ -134,11 +219,140 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": "/**\n\t * Upload csv file\n\t */"
+          ]
+        },
+        {
+          "name": "clickOnIdColumn",
+          "parameters": []
+        },
+        {
+          "name": "selectSortType",
+          "parameters": [
+            {
+              "name": "column",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "int",
+                "unresolvedClassName": "int",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "sortType",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ]
+        },
+        {
+          "name": "clickAction",
+          "parameters": [
+            {
+              "name": "label",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ]
+        },
+        {
+          "name": "clickConfirm",
+          "parameters": [
+            {
+              "name": "confirm",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ]
+        },
+        {
+          "name": "clickSearch",
+          "parameters": []
+        },
+        {
+          "name": "clickConfiguration",
+          "parameters": []
+        },
+        {
+          "name": "clickDataImport",
+          "parameters": []
+        },
+        {
+          "name": "clickDownload",
+          "parameters": []
+        },
+        {
+          "name": "selectEmployeeCheckbox",
+          "parameters": []
+        },
+        {
+          "name": "fillText",
+          "parameters": [
+            {
+              "name": "fieldName",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "value",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ]
+        },
+        {
+          "name": "verifyMessageNoRecordsFound",
+          "parameters": []
+        },
+        {
+          "name": "verifyImportedEmployee",
+          "parameters": []
         }
       ]
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }
