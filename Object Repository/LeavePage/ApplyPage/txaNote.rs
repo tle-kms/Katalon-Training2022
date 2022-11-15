@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>TextArea</name>
+   <name>txaNote</name>
    <tag></tag>
    <elementGuidId>97c95181-5765-4d3f-a196-b9a6f4b7c590</elementGuidId>
    <selectorCollection>

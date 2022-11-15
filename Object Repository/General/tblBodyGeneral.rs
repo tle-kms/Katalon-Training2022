@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>DropdownButton</name>
+   <name>tblBodyGeneral</name>
    <tag></tag>
-   <elementGuidId>4a727cb2-3651-468b-9de2-3f66208ef4be</elementGuidId>
+   <elementGuidId>e18c8006-4459-4eaa-bd29-19500b655f94</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//label[text()='${fieldName}']/../following-sibling::div//i</value>
+         <value>//div[@role='table']/div[@class='oxd-table-body']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//label[text()='${fieldName}']/../following-sibling::div//i</value>
-      <webElementGuid>5b430a75-80e3-4e3a-b8c1-f895604ab5f0</webElementGuid>
+      <value>//div[@role='table']/div[@class='oxd-table-body']</value>
+      <webElementGuid>1f34ae57-14b1-4c88-a593-f60ca1541dc8</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

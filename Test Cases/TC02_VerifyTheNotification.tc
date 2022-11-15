@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC02 - Verify the Notification</name>
-   <tag>week2, regression</tag>
+   <name>TC02_VerifyTheNotification</name>
+   <tag>Week2,Regression</tag>
    <comment></comment>
    <testCaseGuid>d9fd3391-7b7e-4fe1-9a29-d724c754ffb0</testCaseGuid>
 </TestCaseEntity>

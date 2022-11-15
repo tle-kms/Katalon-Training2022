@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Textbox</name>
+   <name>lblPopupMessage</name>
    <tag></tag>
-   <elementGuidId>c44dc75e-9a5a-4f85-be66-c2c04522b0ec</elementGuidId>
+   <elementGuidId>4b569838-4bd4-499c-bc6b-98fc9c7066bf</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//label[text()='${label}']/../following-sibling::div/input</value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value></value>
+         <value>//div[@class='orangehrm-text-center-align']/p</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -21,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//label[text()='${label}']/../following-sibling::div/input</value>
-      <webElementGuid>8854aed8-a361-4565-9845-aa1841e89aee</webElementGuid>
+      <value>//div[@class='orangehrm-text-center-align']/p</value>
+      <webElementGuid>ff77bc90-5b1b-4d35-aa45-ca3f2c457ea5</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

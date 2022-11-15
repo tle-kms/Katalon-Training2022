@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>colId</name>
+   <name>tblHeaderGeneral</name>
    <tag></tag>
-   <elementGuidId>96dde1bb-36cc-4a99-92a2-edccf4bbad3a</elementGuidId>
+   <elementGuidId>098cef03-0717-49af-9431-b8cc748fc7ce</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>(//div[@role='table']/div[@class='oxd-table-header']//div[@role='columnheader'])[2]/div[@class='oxd-table-header-sort']/i</value>
+         <value>//div[@role='table']/div[@class='oxd-table-header']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>(//div[@role='table']/div[@class='oxd-table-header']//div[@role='columnheader'])[2]/div[@class='oxd-table-header-sort']/i</value>
-      <webElementGuid>08d1307a-d7d3-4e72-aae1-cb5ffde5033f</webElementGuid>
+      <value>//div[@role='table']/div[@class='oxd-table-header']</value>
+      <webElementGuid>939e65fc-e5c4-448a-aba4-3cc209e5239f</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

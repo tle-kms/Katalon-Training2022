@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>btnAction</name>
+   <name>btnDropDownGeneral</name>
    <tag></tag>
-   <elementGuidId>9a411201-06b1-419c-97df-c8284a22b9d0</elementGuidId>
+   <elementGuidId>4a727cb2-3651-468b-9de2-3f66208ef4be</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[@class='oxd-table-card'][${row}]//div[@role='cell'][${col}]//button[contains(@class,'oxd-button')]</value>
+         <value>//label[text()='${fieldName}']/../following-sibling::div//i</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[@class='oxd-table-card'][${row}]//div[@role='cell'][${col}]//button[contains(@class,'oxd-button')]</value>
-      <webElementGuid>01abd7c6-5984-45a8-804c-6bb2db637ec5</webElementGuid>
+      <value>//label[text()='${fieldName}']/../following-sibling::div//i</value>
+      <webElementGuid>5b430a75-80e3-4e3a-b8c1-f895604ab5f0</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

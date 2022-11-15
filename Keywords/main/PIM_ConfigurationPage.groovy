@@ -1,4 +1,4 @@
-package common
+package main
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
@@ -19,7 +19,6 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords
 
 import internal.GlobalVariable
-import main.LeavePage
 
 import org.openqa.selenium.WebElement
 import org.openqa.selenium.WebDriver
@@ -37,19 +36,19 @@ import com.kms.katalon.core.mobile.helper.MobileElementCommonHelper
 import com.kms.katalon.core.util.KeywordUtil
 
 import com.kms.katalon.core.webui.exception.WebElementNotFoundException
-import org.openqa.selenium.*
 
-class WebGUI extends WebUiBuiltInKeywords  {
-	/** Get attribute values of a list */
+
+class PIM_ConfigurationPage {
+	/** Verify message in the modal */
 	@Keyword
-	static List<String> getListAttributeValues(TestObject listObject, int colIndex) {
-		WebElement obj = WebUiBuiltInKeywords.findWebElement(listObject)
-		List<String> items = new ArrayList<String>()
-		def basePage = new BasePage()
-		for(int i = basePage.countListNumber(listObject); i > 1; i--) {
-			WebElement element = obj.findElement(By.xpath("./div[@class='oxd-table-card'][" + i + "]//div[@role='cell'][" + colIndex + "]"))
-			items.add(element.getText())
-		}
-		return items
+	def verifyPopupMessage(String message) {
+		String actualMessage = WebUiBuiltInKeywords.getText(findTestObject('PIMPage/ConfigurationPage/lblPopupMessage'))
+		WebUiBuiltInKeywords.verifyEqual(actualMessage, message)
+	}
+
+	/** Click OK button in the modal */
+	@Keyword
+	def clickOK() {
+		WebUiBuiltInKeywords.click(findTestObject('PIMPage/ConfigurationPage/btnOK'))
 	}
 }

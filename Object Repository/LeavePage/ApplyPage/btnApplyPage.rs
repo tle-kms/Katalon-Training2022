@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>TableHeader</name>
+   <name>btnApplyPage</name>
    <tag></tag>
-   <elementGuidId>098cef03-0717-49af-9431-b8cc748fc7ce</elementGuidId>
+   <elementGuidId>32e213cb-d488-4a4e-aff9-152ca7ae5f6b</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[@role='table']/div[@class='oxd-table-header']</value>
+         <value>//label[text()='${fieldName}']/../following-sibling::div</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[@role='table']/div[@class='oxd-table-header']</value>
-      <webElementGuid>939e65fc-e5c4-448a-aba4-3cc209e5239f</webElementGuid>
+      <value>//label[text()='${fieldName}']/../following-sibling::div</value>
+      <webElementGuid>8c75bbec-b109-4b99-98c4-6251a6831936</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

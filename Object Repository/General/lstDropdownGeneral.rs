@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>toastMessage</name>
+   <name>lstDropdownGeneral</name>
    <tag></tag>
-   <elementGuidId>3430fe0d-2a5f-4663-b054-c7011185a1b6</elementGuidId>
+   <elementGuidId>4dca7673-9596-4236-9504-2fea32e8325b</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[contains(@class,'toast-container')]//p[contains(@class,'toast-message')]</value>
+         <value>//label[text()='${fieldName}']/../following-sibling::div//span[text()='${option}']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[contains(@class,'toast-container')]//p[contains(@class,'toast-message')]</value>
-      <webElementGuid>5fe24661-0ecc-441e-8536-9b624c20d4fe</webElementGuid>
+      <value>//label[text()='${fieldName}']/../following-sibling::div//span[text()='${option}']</value>
+      <webElementGuid>42a34889-e002-4b97-bbdc-8b1e97265fc9</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

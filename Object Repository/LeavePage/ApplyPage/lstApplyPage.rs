@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>TableBody</name>
+   <name>lstApplyPage</name>
    <tag></tag>
-   <elementGuidId>e18c8006-4459-4eaa-bd29-19500b655f94</elementGuidId>
+   <elementGuidId>ad9a5684-c03a-47ee-92b5-031be95dcd1d</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[@role='table']/div[@class='oxd-table-body']</value>
+         <value>//label[text()='${fieldName}']/../following-sibling::div//div[text()='${option}']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[@role='table']/div[@class='oxd-table-body']</value>
-      <webElementGuid>1f34ae57-14b1-4c88-a593-f60ca1541dc8</webElementGuid>
+      <value>//label[text()='${fieldName}']/../following-sibling::div//div[text()='${option}']</value>
+      <webElementGuid>12322133-6639-4d07-98e4-7b4152ee432b</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

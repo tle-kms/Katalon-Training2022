@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>btnAction</name>
+   <name>lblToastMessage</name>
    <tag></tag>
-   <elementGuidId>9a411201-06b1-419c-97df-c8284a22b9d0</elementGuidId>
+   <elementGuidId>3430fe0d-2a5f-4663-b054-c7011185a1b6</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[@class='oxd-table-card'][${row}]//div[@role='cell'][${col}]//button[contains(@class,'oxd-button')]</value>
+         <value>//div[contains(@class,'toast-container')]//p[contains(@class,'toast-message')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[@class='oxd-table-card'][${row}]//div[@role='cell'][${col}]//button[contains(@class,'oxd-button')]</value>
-      <webElementGuid>01abd7c6-5984-45a8-804c-6bb2db637ec5</webElementGuid>
+      <value>//div[contains(@class,'toast-container')]//p[contains(@class,'toast-message')]</value>
+      <webElementGuid>5fe24661-0ecc-441e-8536-9b624c20d4fe</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

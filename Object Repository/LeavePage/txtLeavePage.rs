@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Textbox</name>
+   <name>txtLeavePage</name>
    <tag></tag>
    <elementGuidId>42e97ef8-1d68-40d7-b91d-5031562758f0</elementGuidId>
    <selectorCollection>

@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>DropdownListbox</name>
+   <name>txtGeneral</name>
    <tag></tag>
-   <elementGuidId>ad9a5684-c03a-47ee-92b5-031be95dcd1d</elementGuidId>
+   <elementGuidId>c44dc75e-9a5a-4f85-be66-c2c04522b0ec</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//label[text()='${fieldName}']/../following-sibling::div//div[text()='${option}']</value>
+         <value>//label[text()='${label}']/../following-sibling::div/input</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +20,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//label[text()='${fieldName}']/../following-sibling::div//div[text()='${option}']</value>
-      <webElementGuid>12322133-6639-4d07-98e4-7b4152ee432b</webElementGuid>
+      <value>//label[text()='${label}']/../following-sibling::div/input</value>
+      <webElementGuid>8854aed8-a361-4565-9845-aa1841e89aee</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

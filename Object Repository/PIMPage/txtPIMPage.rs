@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Textbox</name>
+   <name>txtPIMPage</name>
    <tag></tag>
    <elementGuidId>639d6d1d-eb03-44a9-a907-60a8901cd08f</elementGuidId>
    <selectorCollection>

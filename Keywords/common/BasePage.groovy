@@ -44,27 +44,21 @@ import com.kms.katalon.core.webui.exception.WebElementNotFoundException
 import org.openqa.selenium.Keys as Keys
 
 class BasePage {
-	/**
-	 * SubString between 2 characters
-	 */
+	/** SubString between 2 characters */
 	@Keyword
 	def String getStringBetweenTwoChar(String strInput, String strFrom, String strTo) {
 		return strInput.substring(strInput.indexOf(strFrom) + 1, strInput.lastIndexOf(strTo))
 	}
 
-	/**
-	 * get date of today
-	 */
+	/** get date of today */
 	@Keyword
-	def String getDateToday() {
+	def static String getDateToday() {
 		Date date = new Date()
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd")
 		return sdf.format(date)
 	}
 
-	/**
-	 * add days to a date
-	 */
+	/** add days to a date */
 	@Keyword
 	def String addDays(String date, int days) {
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd")
@@ -73,69 +67,35 @@ class BasePage {
 		return (String)(sdf.format(cal.getTime()))
 	}
 
-	/**
-	 * fill a text
-	 */
-	@Keyword
-	def void fillText(String fieldName, String strInput) {
-		WebUiBuiltInKeywords.sendKeys(findTestObject('LeavePage/Textbox', [('fieldName') : fieldName]), Keys.chord(Keys.CONTROL, 'a'))
-		WebUiBuiltInKeywords.sendKeys(findTestObject('LeavePage/Textbox', [('fieldName') : fieldName]), Keys.chord(Keys.DELETE))
-		WebUiBuiltInKeywords.setText(findTestObject('LeavePage/Textbox', [('fieldName') : fieldName]), strInput)
-	}
-
-	/**
-	 * enter a text
-	 */
+	/** enter a text */
 	@Keyword
 	def void enterText(TestObject obj, String strInput) {
 		int len = WebUiBuiltInKeywords.getText(obj).length()
 		WebUiBuiltInKeywords.click(obj)
 		for(int i = 0; i < len; i++) {
-//			WebUiBuiltInKeywords.sendKeys(Keys.BACK_SPACE)
 			WebUiBuiltInKeywords.sendKeys(obj, Keys.chord(Keys.BACK_SPACE))
 		}
 		WebUiBuiltInKeywords.setText(obj, strInput)
 	}
 
-	/**
-	 * Refresh browser
-	 */
+	/** Count total number of a list */
 	@Keyword
-	def refreshBrowser() {
-		KeywordUtil.logInfo("Refreshing")
-		WebDriver webDriver = DriverFactory.getWebDriver()
-		webDriver.navigate().refresh()
-		KeywordUtil.markPassed("Refresh successfully")
+	static int countListNumber(TestObject table) {
+		WebElement tblBody = WebUiBuiltInKeywords.findWebElement(table)
+		List<WebElement> listElements = tblBody.findElements(By.xpath("./div[@class='oxd-table-card']"))
+		return listElements.size()
 	}
 
-	/**
-	 * Click element
-	 * @param to Katalon test object
-	 */
+	/** Verified toast message */
 	@Keyword
-	def clickElement(TestObject to) {
-		try {
-			WebElement element = WebUiBuiltInKeywords.findWebElement(to);
-			KeywordUtil.logInfo("Clicking element")
-			element.click()
-			KeywordUtil.markPassed("Element has been clicked")
-		} catch (WebElementNotFoundException e) {
-			KeywordUtil.markFailed("Element not found")
-		} catch (Exception e) {
-			KeywordUtil.markFailed("Fail to click on element")
-		}
+	def void verifyToastMessage(String expectedMessage) {
+		String toastMessage = WebUiBuiltInKeywords.getText(findTestObject('General/lblToastMessage'))
+		WebUiBuiltInKeywords.verifyEqual(toastMessage, expectedMessage)
 	}
 
-	/**
-	 * Get all rows of HTML table
-	 * @param table Katalon test object represent for HTML table
-	 * @param outerTagName outer tag name of TR tag, usually is TBODY
-	 * @return All rows inside HTML table
-	 */
+	/** scroll to the table header */
 	@Keyword
-	def List<WebElement> getHtmlTableRows(TestObject table, String outerTagName) {
-		WebElement mailList = WebUiBuiltInKeywords.findWebElement(table)
-		List<WebElement> selectedRows = mailList.findElements(By.xpath("./" + outerTagName + "/tr"))
-		return selectedRows
+	def void scrollToTheTable() {
+		WebUiBuiltInKeywords.scrollToElement(findTestObject('General/tblHeaderGeneral'), 10)
 	}
 }

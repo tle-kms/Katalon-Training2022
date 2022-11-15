@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>DropdownListbox</name>
+   <name>dgdId</name>
    <tag></tag>
-   <elementGuidId>4dca7673-9596-4236-9504-2fea32e8325b</elementGuidId>
+   <elementGuidId>96dde1bb-36cc-4a99-92a2-edccf4bbad3a</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//label[text()='${fieldName}']/../following-sibling::div//span[text()='${option}']</value>
+         <value>(//div[@role='table']/div[@class='oxd-table-header']//div[@role='columnheader'])[2]/div[@class='oxd-table-header-sort']/i</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//label[text()='${fieldName}']/../following-sibling::div//span[text()='${option}']</value>
-      <webElementGuid>42a34889-e002-4b97-bbdc-8b1e97265fc9</webElementGuid>
+      <value>(//div[@role='table']/div[@class='oxd-table-header']//div[@role='columnheader'])[2]/div[@class='oxd-table-header-sort']/i</value>
+      <webElementGuid>08d1307a-d7d3-4e72-aae1-cb5ffde5033f</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

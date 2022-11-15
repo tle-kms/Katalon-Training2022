@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Dropdown</name>
+   <name>btnOK</name>
    <tag></tag>
-   <elementGuidId>32e213cb-d488-4a4e-aff9-152ca7ae5f6b</elementGuidId>
+   <elementGuidId>7b5afd4f-e7f9-44db-9f5a-28b28a960c83</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//label[text()='${fieldName}']/../following-sibling::div</value>
+         <value>//div[@class='orangehrm-modal-footer']/button</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//label[text()='${fieldName}']/../following-sibling::div</value>
-      <webElementGuid>8c75bbec-b109-4b99-98c4-6251a6831936</webElementGuid>
+      <value>//div[@class='orangehrm-modal-footer']/button</value>
+      <webElementGuid>49b62e9e-1338-4a1e-abba-0e7fc1277acc</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

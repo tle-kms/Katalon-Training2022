@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>(//div[@role='table']/div[@class='oxd-table-header']//div[@role='columnheader'])[${index}]/div[@class='oxd-table-header-sort']//ul//span[text()='${sortType}']</value>
+         <value>(//div[@role='columnheader'])[${index}]/div[@class='oxd-table-header-sort']//ul//span[text()='${sortType}']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>(//div[@role='table']/div[@class='oxd-table-header']//div[@role='columnheader'])[${index}]/div[@class='oxd-table-header-sort']//ul//span[text()='${sortType}']</value>
-      <webElementGuid>40a08682-1ade-4ad0-94d1-bab7b5700ad9</webElementGuid>
+      <value>(//div[@role='columnheader'])[${index}]/div[@class='oxd-table-header-sort']//ul//span[text()='${sortType}']</value>
+      <webElementGuid>d7bc338b-22f7-427d-a8be-0ea032dc34e6</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
