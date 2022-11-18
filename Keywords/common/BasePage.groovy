@@ -45,13 +45,11 @@ import org.openqa.selenium.Keys as Keys
 
 class BasePage {
 	/** SubString between 2 characters */
-	@Keyword
 	def String getStringBetweenTwoChar(String strInput, String strFrom, String strTo) {
 		return strInput.substring(strInput.indexOf(strFrom) + 1, strInput.lastIndexOf(strTo))
 	}
 
 	/** get date of today */
-	@Keyword
 	def static String getDateToday() {
 		Date date = new Date()
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd")
@@ -59,7 +57,6 @@ class BasePage {
 	}
 
 	/** add days to a date */
-	@Keyword
 	def String addDays(String date, int days) {
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd")
 		Calendar cal = Calendar.getInstance()
@@ -68,7 +65,6 @@ class BasePage {
 	}
 
 	/** enter a text */
-	@Keyword
 	def void enterText(TestObject obj, String strInput) {
 		int len = WebUiBuiltInKeywords.getText(obj).length()
 		WebUiBuiltInKeywords.click(obj)
@@ -79,7 +75,6 @@ class BasePage {
 	}
 
 	/** Count total number of a list */
-	@Keyword
 	static int countListNumber(TestObject table) {
 		WebElement tblBody = WebUiBuiltInKeywords.findWebElement(table)
 		List<WebElement> listElements = tblBody.findElements(By.xpath("./div[@class='oxd-table-card']"))
@@ -87,14 +82,12 @@ class BasePage {
 	}
 
 	/** Verified toast message */
-	@Keyword
 	def void verifyToastMessage(String expectedMessage) {
 		String toastMessage = WebUiBuiltInKeywords.getText(findTestObject('General/lblToastMessage'))
 		WebUiBuiltInKeywords.verifyEqual(toastMessage, expectedMessage)
 	}
 
 	/** scroll to the table header */
-	@Keyword
 	def void scrollToTheTable() {
 		WebUiBuiltInKeywords.scrollToElement(findTestObject('General/tblHeaderGeneral'), 10)
 	}

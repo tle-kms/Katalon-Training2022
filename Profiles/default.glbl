@@ -89,4 +89,19 @@
       <initValue>'Katalon'</initValue>
       <name>employeeLN</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'importData.csv'</initValue>
+      <name>fileName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>5</initValue>
+      <name>attempt</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>pathWithoutFile</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

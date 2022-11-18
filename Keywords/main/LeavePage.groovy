@@ -43,19 +43,16 @@ import com.kms.katalon.core.webui.exception.WebElementNotFoundException
 
 class LeavePage extends BasePage {
 	/** get Leave Balance number */
-	@Keyword
 	def String getFirtStringBeforeAChar(String strInput, String ch) {
 		return strInput.split(ch)[0]
 	}
 
 	/** convert string to float */
-	@Keyword
 	def float convertStringToFloat(String strInput) {
 		return strInput as float
 	}
 
 	/** get the amount of Leave Balance */
-	@Keyword
 	def float getLeaveBalanceAmount() {
 		String leaveBalance = WebUiBuiltInKeywords.getText(findTestObject('LeavePage/ApplyPage/txtLeaveBalance'))
 		String strAmount = getFirtStringBeforeAChar(leaveBalance,' ')
@@ -63,14 +60,12 @@ class LeavePage extends BasePage {
 	}
 
 	/** Navigate to a top menu item */
-	@Keyword
 	def void navigateToTopMenu(String menuName) {
 		WebUiBuiltInKeywords.click(findTestObject('LeavePage/mnuTopbar'
 				, [('mnuItem') : menuName]))
 	}
 
 	/** Select an item in a dropdown */
-	@Keyword
 	def selectItemInDropdown(String dropdownName, String item) {
 		WebUiBuiltInKeywords.click(findTestObject('LeavePage/ApplyPage/btnApplyPage'
 				, [('fieldName') : dropdownName]))
@@ -80,7 +75,6 @@ class LeavePage extends BasePage {
 	}
 
 	/** Fill in data into a textbox */
-	@Keyword
 	def void fillText(String fieldName, String value) {
 		WebUiBuiltInKeywords.sendKeys(findTestObject('LeavePage/txtLeavePage'
 				, [('fieldName') : fieldName])
@@ -94,21 +88,18 @@ class LeavePage extends BasePage {
 	}
 
 	/** Enter a Note */
-	@Keyword
 	def enterANote(String value) {
 		WebUiBuiltInKeywords.setText(findTestObject('LeavePage/ApplyPage/txaNote'
 				, [('fieldName') : 'Comments']), value)
 	}
 
 	/** Click on Apply button */
-	@Keyword
 	def clickApply() {
 		WebUiBuiltInKeywords.scrollToElement(findTestObject('LeavePage/ApplyPage/btnApply'), 10)
 		WebUiBuiltInKeywords.click(findTestObject('LeavePage/ApplyPage/btnApply'))
 	}
 
 	/** Click on Action button */
-	@Keyword
 	def clickAction(int row, int col) {
 		WebUiBuiltInKeywords.scrollToElement(findTestObject('General/tblHeaderGeneral'), 10)
 		WebUiBuiltInKeywords.click(findTestObject('LeavePage/MyLeavePage/btnAction'
@@ -117,7 +108,6 @@ class LeavePage extends BasePage {
 	}
 
 	/** get Cell Value */
-	@Keyword
 	def String getCellValue(TestObject table, int row, int col) {
 		WebElement tblBody = WebUiBuiltInKeywords.findWebElement(table)
 		WebElement cell = tblBody.findElement(By.xpath("./div[@class='oxd-table-card'][" + row + "]//div[@role='cell'][" + col + "]"))
@@ -125,49 +115,66 @@ class LeavePage extends BasePage {
 	}
 
 	/** get rowID of the leave just submitted */
-	@Keyword
 	def static getRowIdOfLeaveRecord(TestObject listObject, String strDate, int colDate) {
 		WebElement obj = WebUiBuiltInKeywords.findWebElement(listObject)
-		int row
 		for(int i = countListNumber(listObject); i > 1; i--) {
 			WebElement element = obj.findElement(By.xpath("./div[@class='oxd-table-card']["
 					+ i + "]//div[@role='cell']["
 					+ colDate + "]"))
 			String str = element.getText().toString()
 			if(	str.equals(strDate)
-			&& (WebUiBuiltInKeywords.verifyElementPresent(findTestObject('LeavePage/MyLeavePage/btnAction'
-			, [('row') : i
-				, ('col') : GlobalVariable.colActions])
-			, 10
-			, FailureHandling.CONTINUE_ON_FAILURE)) == true) {
-				row = i
-				break
+				&& (WebUiBuiltInKeywords.verifyElementPresent(findTestObject('LeavePage/MyLeavePage/btnAction'
+																, [('row') : i
+																, ('col') : GlobalVariable.colActions])
+																, 10
+																, FailureHandling.OPTIONAL)) == true) {
+
+				return i
 			}
 		}
-		return row
 	}
 
+	def test() {
+		int row = getRowIdOfLeaveRecord(findTestObject('General/tblBodyGeneral'), '2022-11-18', 2)
+		println 'row is: ' + row
+	}
 	/** verify the status of record */
-	@Keyword
-	def verifyStatusOfLeave(String letter, String status) {
+//	@Keyword
+//	def verifyStatusOfLeave(String letter, String status) {
+//		// identify position of the new record firstly
+//		WebUiBuiltInKeywords.scrollToElement(findTestObject('General/tblHeaderGeneral'), 10)
+//		String cell = getCellValue(findTestObject('General/tblBodyGeneral')
+//				, GlobalVariable.row
+//				, GlobalVariable.colStatus)
+//		String cellValue = getFirtStringBeforeAChar(cell, letter)
+//		WebUiBuiltInKeywords.verifyMatch(cellValue, status, false, FailureHandling.STOP_ON_FAILURE)
+//	}
+
+	def verifyStatusOfLeave(String status) {
 		// identify position of the new record firstly
 		WebUiBuiltInKeywords.scrollToElement(findTestObject('General/tblHeaderGeneral'), 10)
 		String cell = getCellValue(findTestObject('General/tblBodyGeneral')
 				, GlobalVariable.row
 				, GlobalVariable.colStatus)
+		String letter
+		if (status == 'Pending Approva') {
+			letter = 'l'
+		}
+		else if (status == 'Cancelled') {
+			letter = ' '
+		}		
 		String cellValue = getFirtStringBeforeAChar(cell, letter)
 		WebUiBuiltInKeywords.verifyMatch(cellValue, status, false, FailureHandling.STOP_ON_FAILURE)
 	}
-
+	
 	/** set value for Global variable */
-	@Keyword
 	def setGlobalVariableToday() {
 		GlobalVariable.today = getDateToday()
 	}
 
 	/** identify the rowId */
-	@Keyword
 	def setGlobalVariableRow() {
+		WebUiBuiltInKeywords.scrollToElement(findTestObject('General/tblBodyGeneral'), 10)
 		GlobalVariable.row = getRowIdOfLeaveRecord(findTestObject('General/tblBodyGeneral')
 				, GlobalVariable.today
 				, GlobalVariable.colDate)

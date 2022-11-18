@@ -24,6 +24,9 @@ import org.openqa.selenium.WebElement
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.By
 
+import java.nio.file.Files
+import java.nio.file.Paths
+
 import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory
 import com.kms.katalon.core.webui.driver.DriverFactory
 
@@ -34,21 +37,41 @@ import com.kms.katalon.core.testobject.TestObjectProperty
 
 import com.kms.katalon.core.mobile.helper.MobileElementCommonHelper
 import com.kms.katalon.core.util.KeywordUtil
+import com.kms.katalon.core.util.KeywordUtil
+
+import org.testng.Assert
 
 import com.kms.katalon.core.webui.exception.WebElementNotFoundException
 
 
 class PIM_ConfigurationPage {
 	/** Verify message in the modal */
-	@Keyword
 	def verifyPopupMessage(String message) {
 		String actualMessage = WebUiBuiltInKeywords.getText(findTestObject('PIMPage/ConfigurationPage/lblPopupMessage'))
 		WebUiBuiltInKeywords.verifyEqual(actualMessage, message)
 	}
 
 	/** Click OK button in the modal */
-	@Keyword
 	def clickOK() {
 		WebUiBuiltInKeywords.click(findTestObject('PIMPage/ConfigurationPage/btnOK'))
 	}
+	
+	/** check the file has been completely downloaded */
+	def isFileDownloaded(String downloadPath, String fileName) {
+		int i
+		int j = 0
+		for (i = 0; i < GlobalVariable.attempt; i++) {
+			if (!Files.exists(Paths.get(downloadPath, fileName))) {
+				WebUiBuiltInKeywords.delay(1)
+				j++
+			}
+		}
+		return j > i ? false : true
+	}
+	
+	/** Verify the csv file downloaded successfully */
+	def verifyCSVFileDownloaded(String downloadPath, String fileName) {
+		WebUiBuiltInKeywords.verifyEqual(isFileDownloaded(downloadPath, fileName), true, FailureHandling.STOP_ON_FAILURE)
+	}
+	
 }

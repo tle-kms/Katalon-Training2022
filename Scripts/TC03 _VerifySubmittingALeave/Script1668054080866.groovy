@@ -87,7 +87,7 @@ leavePage.navigateToTopMenu('My Leave')
 leavePage.setGlobalVariableRow()
 
 "Step 19: Verify that the status of new record is 'Pending Approval'"
-leavePage.verifyStatusOfLeave('l', 'Pending Approva')
+leavePage.verifyStatusOfLeave('Pending Approva')
 
 "Step 20: Click on Cancel button at the new record just submitted"
 leavePage.clickAction(GlobalVariable.row, GlobalVariable.colActions)
@@ -96,7 +96,7 @@ leavePage.clickAction(GlobalVariable.row, GlobalVariable.colActions)
 pimPage.verifyToastMessage('Successfully Updated')
 
 "Step 22: Verify that the status of the record is changed to 'Cancelled'"
-leavePage.verifyStatusOfLeave(' ', 'Cancelled')
+leavePage.verifyStatusOfLeave('Cancelled')
 
 "Step 23: Close the browser"
 WebUI.closeBrowser()

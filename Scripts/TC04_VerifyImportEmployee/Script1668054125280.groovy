@@ -52,8 +52,9 @@ pimPage.deleteFile(GlobalVariable.path)
 "Step 7: Click on Download link"
 pimPage.clickDownload()
 
-"Step 8: Delay for a while for downloading completed"
-WebUI.delay(5)
+"Step 8: Verify that the CSV file downloaded successfully"
+//WebUI.delay(5)
+pim_confPage.verifyCSVFileDownloaded(GlobalVariable.pathWithoutFile, 'importData.csv')
 
 "Step 9: Add 1 record into the downloaded csv file"
 pimPage.appendToCsvFile()
