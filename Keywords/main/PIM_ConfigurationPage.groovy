@@ -66,7 +66,7 @@ class PIM_ConfigurationPage {
 				j++
 			}
 		}
-		return j > i ? false : true
+		return j < GlobalVariable.attempt ? true : false
 	}
 	
 	/** Verify the csv file downloaded successfully */
